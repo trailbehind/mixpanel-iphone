@@ -1000,6 +1000,8 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)deleteUser;
 
+- (void)checkForSurveysWithCompletion:(void (^)(NSArray *surveys))completion;
+
 @end
 
 /*!
