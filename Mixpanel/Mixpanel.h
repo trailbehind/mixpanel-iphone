@@ -670,6 +670,9 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)showSurvey;
 
+- (void)checkForSurveysWithCompletion:(void (^)(NSArray *surveys))completion;
+
+
 #pragma mark - Mixpanel Notifications
 
 /*!
@@ -999,8 +1002,6 @@ NS_ASSUME_NONNULL_BEGIN
  Delete current user's record from Mixpanel People.
  */
 - (void)deleteUser;
-
-- (void)checkForSurveysWithCompletion:(void (^)(NSArray *surveys))completion;
 
 @end
 
